@@ -248,7 +248,7 @@ class MollieSettingsPage extends WC_Settings_Page
                 'default' => 'yes',
             ],
             [
-                'id'      => $this->getSettingId('connect_client_id'),
+                'id'      => $this->settingsHelper->getSettingId('connect_client_id'),
                 'title'   => __('Mollie Connect Client ID', 'mollie-payments-for-bluehouse'),
                 'type'    => 'text',
                 'default' => '',              
@@ -256,7 +256,7 @@ class MollieSettingsPage extends WC_Settings_Page
                 'css'     => 'width: 350px',
             ],
             [
-                'id'      => $this->getSettingId('connect_customer_secret'),
+                'id'      => $this->settingsHelper->getSettingId('connect_customer_secret'),
                 'title'   => __('Mollie Connect Customer Secret', 'mollie-payments-for-bluehouse'),
                 'type'    => 'text',
                 'default' => '',
@@ -264,7 +264,7 @@ class MollieSettingsPage extends WC_Settings_Page
                 'css'     => 'width: 350px',
             ],
             [
-                'id'      => $this->getSettingId('connect_redirect_url'),
+                'id'      => $this->settingsHelper->getSettingId('connect_redirect_url'),
                 'title'   => __('Mollie Connect Redirect URL', 'mollie-payments-for-bluehouse'),
                 'type'    => 'text',
                 'default' => '',
