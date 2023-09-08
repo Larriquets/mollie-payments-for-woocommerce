@@ -105,7 +105,15 @@ class MolliePayment extends MollieObject
                     'order_id' => $order->get_id(),
                 ]
             ),
+            'routing' => Mollie_WC_Helper_SplitOrder::getOrderRouting($order)  
         ];
+
+        
+		// Add messages to log
+		Mollie_WC_Plugin::debug( __METHOD__ . 'wp_die routing --> ' . print_r($paymentRequestData,true) );
+
+
+		wp_die('dev');
 
         $paymentRequestData = $this->addSequenceTypeForSubscriptionsFirstPayments($order->get_id(), $gateway, $paymentRequestData);
 
