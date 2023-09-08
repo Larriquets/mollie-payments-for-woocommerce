@@ -271,6 +271,28 @@ class MollieSettingsPage extends WC_Settings_Page
                 'placeholder' => __('Add the same URL configured in your Mollie Connect APP', 'mollie-payments-for-bluehouse'),
             ],
             [
+                'id'      => $this->getSettingId('payment_release_days'),
+                'title'   => __('Payment release days', 'mollie-payments-for-bluehouse'),
+                'type'    => 'number',
+                'default' => '30',
+                'css'     => 'width: 60px',
+                'custom_attributes'=>['step'=>'1', 'min'=>'0', 'max'=>'180'],
+                'placeholder' => __('Numbers of days (0 release inmediatlly)', 'mollie-payments-for-bluehouse'),
+                'desc'  => 'Numbers of days to add to the purchase date in order to release the vendor\'s payment. 0 for release inmediatlly.',
+                'desc_tip' => true
+            ],      
+            [
+                'id'      => $this->getSettingId('bluehouse_fee_percent'),
+                'title'   => __('Bluehouse Fee (%)', 'mollie-payments-for-bluehouse'),
+                'type'    => 'number',
+                'default' => '10',
+                'css'     => 'width: 60px',
+                'custom_attributes'=>['step'=>'1', 'min'=>'0', 'max'=>'100'],
+                'placeholder' => __('Percent', 'mollie-payments-for-bluehouse'),
+                'desc'  => 'Percent of fee for vendors, the amount goes to Bluehouse account.',
+                'desc_tip' => true
+            ],
+            [
                 'id' => $this->settingsHelper->getSettingId('sectionend'),
                 'type' => 'sectionend',
             ],
