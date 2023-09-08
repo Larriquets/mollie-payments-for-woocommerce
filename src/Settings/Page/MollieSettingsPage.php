@@ -271,7 +271,7 @@ class MollieSettingsPage extends WC_Settings_Page
                 'placeholder' => __('Add the same URL configured in your Mollie Connect APP', 'mollie-payments-for-bluehouse'),
             ],
             [
-                'id'      => $this->getSettingId('payment_release_days'),
+                'id'      => $this->settingsHelper->getSettingId('payment_release_days'),
                 'title'   => __('Payment release days', 'mollie-payments-for-bluehouse'),
                 'type'    => 'number',
                 'default' => '30',
@@ -282,7 +282,7 @@ class MollieSettingsPage extends WC_Settings_Page
                 'desc_tip' => true
             ],      
             [
-                'id'      => $this->getSettingId('bluehouse_fee_percent'),
+                'id'      => $this->settingsHelper->getSettingId('bluehouse_fee_percent'),
                 'title'   => __('Bluehouse Fee (%)', 'mollie-payments-for-bluehouse'),
                 'type'    => 'number',
                 'default' => '10',
