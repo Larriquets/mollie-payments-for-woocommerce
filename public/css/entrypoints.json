@@ -1,0 +1,24 @@
+{
+  "entrypoints": {
+    "mollie-components.min": {
+      "css": [
+        "/public/css/mollie-components.min.css"
+      ]
+    },
+    "mollie-gateway-icons.min": {
+      "css": [
+        "/public/css/mollie-gateway-icons.min.css"
+      ]
+    },
+    "unabledButton.min": {
+      "css": [
+        "/public/css/unabledButton.min.css"
+      ]
+    },
+    "mollie-applepaydirect.min": {
+      "css": [
+        "/public/css/mollie-applepaydirect.min.css"
+      ]
+    }
+  }
+}
