@@ -103,6 +103,16 @@ class MollieSettingsPage extends WC_Settings_Page
         );
     }
 
+    // BlouHouse
+        /**
+     * @return int
+     */
+    public function getReleaseDays()
+    {
+        return intval(get_option($this->getSettingId('payment_release_days')));
+    }
+
+
     /**
      * @param array $settings
      * @return array

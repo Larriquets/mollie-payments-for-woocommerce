@@ -18,6 +18,9 @@ use WC_Order;
 use WC_Payment_Gateway;
 use WC_Subscriptions_Manager;
 use WP_Error;
+//use Mollie_SplitOrder; // Reemplaza "OtraClase" con el nombre real de la otra clase si es diferente
+use Mollie\WooCommerce\Payment\Mollie_SplitOrder;
+
 
 class MolliePayment extends MollieObject
 {
@@ -105,15 +108,14 @@ class MolliePayment extends MollieObject
                     'order_id' => $order->get_id(),
                 ]
             ),
-            'routing' => Mollie_WC_Helper_SplitOrder::getOrderRouting($order)  
+            'routing' => Mollie_SplitOrder::getOrderRouting($order)  
         ];
 
-        
-		// Add messages to log
-		Mollie_WC_Plugin::debug( __METHOD__ . 'wp_die routing --> ' . print_r($paymentRequestData,true) );
-
-
-		wp_die('dev');
+        // Add messages to log
+        $this->logger->debug(
+            __METHOD__ . ' Split Payment - Routing ' . __METHOD__ . ' for payment ' .  print_r($paymentRequestData,true)
+        );
+		 wp_die('dev');
 
         $paymentRequestData = $this->addSequenceTypeForSubscriptionsFirstPayments($order->get_id(), $gateway, $paymentRequestData);
 

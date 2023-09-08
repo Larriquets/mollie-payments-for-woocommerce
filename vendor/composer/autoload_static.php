@@ -313,6 +313,8 @@ class ComposerStaticInitbb1a4169a3c195e474d538859429ad47
         'Mollie\\WooCommerce\\Payment\\PaymentFieldsService' => __DIR__ . '/../..' . '/src/Payment/PaymentFieldsService.php',
         'Mollie\\WooCommerce\\Payment\\PaymentModule' => __DIR__ . '/../..' . '/src/Payment/PaymentModule.php',
         'Mollie\\WooCommerce\\Payment\\PaymentService' => __DIR__ . '/../..' . '/src/Payment/PaymentService.php',
+        //'Mollie_WC_Helper_SplitOrder' => __DIR__ . '/../..' . '/src/Payment/SplitOrder.php',
+
         'Mollie\\WooCommerce\\Payment\\RefundLineItemsBuilder' => __DIR__ . '/../..' . '/src/Payment/RefundLineItemsBuilder.php',
         'Mollie\\WooCommerce\\SDK\\Api' => __DIR__ . '/../..' . '/src/SDK/Api.php',
         'Mollie\\WooCommerce\\SDK\\CouldNotConnectToMollie' => __DIR__ . '/../..' . '/src/SDK/CouldNotConnectToMollie.php',
@@ -354,6 +356,7 @@ class ComposerStaticInitbb1a4169a3c195e474d538859429ad47
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/DummyTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
+
     );
 
     public static function getInitializer(ClassLoader $loader)

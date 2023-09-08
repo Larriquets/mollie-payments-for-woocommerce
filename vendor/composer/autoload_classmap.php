@@ -259,6 +259,7 @@ return array(
     'Mollie\\WooCommerce\\Payment\\PaymentFieldsService' => $baseDir . '/src/Payment/PaymentFieldsService.php',
     'Mollie\\WooCommerce\\Payment\\PaymentModule' => $baseDir . '/src/Payment/PaymentModule.php',
     'Mollie\\WooCommerce\\Payment\\PaymentService' => $baseDir . '/src/Payment/PaymentService.php',
+   // 'Mollie_WC_Helper_SplitOrder' => $baseDir . '/src/Payment/SplitOrder.php',
     'Mollie\\WooCommerce\\Payment\\RefundLineItemsBuilder' => $baseDir . '/src/Payment/RefundLineItemsBuilder.php',
     'Mollie\\WooCommerce\\SDK\\Api' => $baseDir . '/src/SDK/Api.php',
     'Mollie\\WooCommerce\\SDK\\CouldNotConnectToMollie' => $baseDir . '/src/SDK/CouldNotConnectToMollie.php',
@@ -300,4 +301,5 @@ return array(
     'Psr\\Log\\Test\\DummyTest' => $vendorDir . '/psr/log/Psr/Log/Test/DummyTest.php',
     'Psr\\Log\\Test\\LoggerInterfaceTest' => $vendorDir . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
     'Psr\\Log\\Test\\TestLogger' => $vendorDir . '/psr/log/Psr/Log/Test/TestLogger.php',
+
 );
